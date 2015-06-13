@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/summary"
+                android:text="@string/title"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:layout_marginBottom="3sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:id="@+id/summaryField"
+                android:textSize="16sp"
+                android:layout_below="@+id/summary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:text="@string/description"
+                android:textAllCaps="true"
+                android:layout_below="@+id/summaryField"
+                android:textSize="16sp"
+                android:layout_marginTop="3sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionField"
+                android:textSize="16sp"
+                android:layout_below="@+id/description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="top"
+                android:lines="7"
+                android:singleLine="false"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:id="@+id/datePickerField"
+                android:editable="false"
+                android:layout_below="@+id/descriptionField"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:id="@+id/datePickerButton"
+                android:layout_below="@+id/descriptionField"
+                android:layout_alignRight="@+id/datePickerField"
+                android:src="@android:drawable/ic_menu_my_calendar"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addButton"
+                android:layout_below="@+id/datePickerButton"
+                android:text="@string/addNewTask"
+                android:textAllCaps="true"
+                android:clickable="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

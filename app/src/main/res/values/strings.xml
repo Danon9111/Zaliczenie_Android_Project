@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Zaliczenie</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="addTask">Dodaj nowe zadanie</string>
+    <string name="checkTask">Sprawdź zgłoszone zadania</string>
+    <string name="title">Tytuł</string>
+    <string name="description">Opis</string>
+    <string name="addNewTask">Dodaj zadanie</string>
+</resources>
